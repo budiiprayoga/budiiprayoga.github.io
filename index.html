@@ -5,50 +5,779 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>FOL.IO | Landing Page</title>
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo"><a href="index.html">fol<b>.</b>io</a></div>
-            <!-- <ul class="navItems">
-                <li><a href="#">my portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">skills</a></li>
-            </ul> -->
-            <ul class="soc-med">
-                <li><a href="https://www.instagram.com/budiiprayoga/"><img src="img/instagram.png"></a></li>
-                <li><a href="#"><img src="img/linkedin.png"></a></li>
-            </ul>
-        </nav>
+    <!-- START MAIN -->
+    <main>
+        <!-- START SIDEBAR -->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
+                <div class="flip-avatar">
+                    <div class="avatar-box flipped-on-load">
+                        <script src="js/flipAvatar.js"></script>
+                        <figure class="front-avatar">
+                            <img src="img/avatar.png" alt="avatar-1">
+                        </figure>
 
-        <div class="wrapper">
-            <div class="cols">
-                <span class="topline">Hello</span>
-                <h1>I'm <span class="multiText"></span></h1>
-                <p>Saya kuliah di Politeknik Negeri Jakarta, Jurusan Teknik Informasi dan Teknologi, Program Studi Teknik Multimedia Digital.</p>
-                <div class="btn">
-                    <button><a href="#">my portfolio</a></button>
+                        <figure class="back-avatar">
+                            <img src="img/avatar_1.png" alt="avatar-2">
+                        </figure>
+                    </div>                  
                 </div>
-            </div>
-            <div class="cols1">
-                    <div class="imgbox">
-                        <img src="img/brush.png" id="splash">
-                        <img src="img/me.png">
-                    </div>
-            </div>
-        </div>
-    </div>
+                
+                <div class="info-content">
+                    <h1 class="name" title="Budi Prayoga Prabestara">Budi Prayoga Prabestara</h1>
+                    <p class="title">Web Designer & Graphic Designer</p>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typingEffect = new Typed(".multiText", {
-            strings : ["budi prayoga","designer","coder"],
-            loop : true,
-            typeSpeed : 100,
-            backSpeed : 80,
-            backDelay : 1500
-        })
-    </script>
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+                    <ul class="contact-list">
+                        <!-- contact item -->
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="paper-plane-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+
+                                <a href="mailto:budiyogatara12@gmail.com" class="contact-link">budiyogatara12@gmail.com</a>
+                            </div>
+                        </li>
+                        <!-- end contact item -->
+                        
+                         <!-- contact item -->
+                         <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <p class="contact-title">WhatsApp</p>
+
+                                <a href="https://wa.me/6282260728465" class="contact-link" target="_blank">+6282260728465</a>
+                            </div>
+                        </li>
+                        <!-- end contact item -->
+
+                        <!-- contact item -->
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="calendar-number-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+
+                                <time datetime="1999-09-23">September 1999</time>
+                            </div>
+                        </li>
+                        <!-- end contact item -->
+
+                        <!-- contact item -->
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <ion-icon name="pin-outline"></ion-icon>
+                            </div>
+
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+
+                                <address>Bogor, Indonesia</address>
+                            </div>
+                        </li>
+                        <!-- end contact item -->
+                    </ul>
+
+                    <div class="separator"></div>
+                        <ul class="social-list">
+                            <!-- social item -->
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/budiiprayoga/" class="social-link" target="_blank">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                            <!-- end social item -->
+
+                            <!-- social item -->
+                            <li class="social-item">
+                                <a href="https://www.linkedin.com/in/budiiprayoga~/" target="_blank" class="social-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <!-- end social item -->
+
+                            <!-- social item -->
+                            <li class="social-item">
+                                <a href="https://github.com/budiiprayoga" target="_blank" class="social-link">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                            </li>
+                            <!-- end social item -->
+                        </ul>                                    
+            </div>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- START MAIN CONTENT -->
+        <div class="main-content">
+            <!-- navbar start -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <!-- start navbar item -->
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <!-- end navbar item -->
+
+                    <!-- start navbar item -->
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <!-- end navbar item -->
+
+                    <!-- start navbar item -->
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+                    <!-- end navbar item -->
+
+                    <!-- start navbar item -->
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                    <!-- end navbar item -->
+                </ul>
+            </nav>
+            <!-- navbar end -->
+
+            <!-- START ABOUT SECTION -->
+            <article class="about active" data-page="about">
+                <header class="about-header">
+                    <h2 class="h2 article-title">About Me</h2>
+                </header>
+
+                <section class="about-text">
+                    <div class="profile-box">
+                        <figure class="profile">
+                            <img src="img/profile.png" alt="profile">
+                        </figure>
+                    </div>
+                    
+                    <p>Saya merupakan lulusan baru Politeknik Negeri Jakarta program studi Teknik Multimedia Digital. Saya memiliki pengalaman magang di Westep Project. Selama magang saya berhasil membuat desain untuk kebutuhan feed Instagram, mendesain website, dan editing video untuk kebutuhan konten Tiktok. Saya mampu mengoperasikan software seperti Photoshop, Illustrator, Figma, Corel-Draw, Adobe XD, dan saya memiliki kemampuan beberapa bahasa seperti HTML, SCSS, dan CSS.</p>
+                </section>
+
+                <!-- service start -->
+                <section class="service">
+                    <h3 class="h3 service-title">what i'm doing</h3>
+
+                    <ul class="service-list">
+                        <!-- start service item -->
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/web-design.svg" alt="web design">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">web design</h4>
+                                <p class="service-item-text">
+                                    Melakukan perancangan layout, usability, dan tampilan visual dari sebuah website.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- end service item -->
+
+                        <!-- start service item -->
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/palette.svg" alt="web design">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">graphic design</h4>
+                                <p class="service-item-text">
+                                    Menciptakan desain visual yang menarik dan komunikatif.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- end service item -->
+
+                        <!-- start service item -->
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/camera.svg" alt="web design">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">photography</h4>
+                                <p class="service-item-text">
+                                    Pengambilan foto berkualitas tinggi dari kategori apa pun di tingkat profesional.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- end service item -->
+
+                        <!-- start service item -->
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/ui.svg" alt="web design">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">ui ux design</h4>
+                                <p class="service-item-text">
+                                    Menciptakan desain user interface untuk aplikasi dan website.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- end service item -->
+                    </ul>
+                </section>
+
+                <!-- testimonial start -->
+                <!-- testimonial end -->
+                <!-- testimonial popup start -->
+                <!-- testimonial popup end -->
+                <!-- clients start -->
+                <!-- clients end -->
+
+                <!-- service end -->
+            </article>
+            <!-- END ABOUT SECTION -->
+
+            <!-- START RESUME SECTION -->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <!-- Education -->
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Politeknik Negeri Jakarta</h4>
+                            <span>2019 - 2023</span>
+                            <p class="timeline-text">
+                                Jurusan Teknik Informatika dan Komputer
+                            </p>
+                        </li>
+                        <!-- end timeline item -->
+
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">SMK Negeri 1 Cibinong</h4>
+                            <span>2015 - 2018</span>
+                            <p class="timeline-text">
+                                Jurusan Multimedia
+                            </p>
+                        </li>
+                        <!-- end timeline item -->
+                    </ol>
+                </section>
+
+                <!-- Experience -->
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Westep Project -
+                                <span class="h4 timeline-item-title">Internship</span>
+                            </h4>
+                            <span>2022 (3 Bulan)</span>
+                            
+                            <ol class="work-list">
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Merancang logo untuk brand e-commerce
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Membuat website e-commerce
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Mendesain kebutuhan konten untuk feed Instagram
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Pengambilan dan editing video untuk konten Tiktok
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+                            </ol>
+                            <!-- <p class="timeline-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nulla.
+                            </p> -->
+                        </li>
+                        <!-- end timeline item -->
+
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Pandora Fest PNJ -
+                                <span class="h4 timeline-item-title">Committee</span>
+                            </h4>
+                            <span>2021</span>
+                            <ol class="work-list">
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Mendesain konten feed Instagram
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Pengambilan foto peserta lomba
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Mendesain sertifikat peserta lomba
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+                            </ol>
+                        </li>
+                        <!-- end timeline item -->
+
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">4CM digital printing -
+                                <span class="h4 timeline-item-title">Internship</span>
+                            </h4>
+                            <span>2017 (2 bulan)</span>
+                            <ol class="work-list">
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Mendesain banner dan poster untuk kebutuhan customer
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+
+                                <!-- start work item -->
+                                <li class="work-item">
+                                    <p class="timeline-text">
+                                        Melakukan printing poster dan banner
+                                    </p>
+                                </li>
+                                <!-- end work item -->
+                            </ol>
+                        </li>
+                        <!-- end timeline item -->
+                    </ol>
+                </section>
+
+                <!-- Sertificate -->
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="ribbon-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">sertificate</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Digital Talent Scholarship -
+                                <span class="h4 timeline-item-title">Kominfo</span>
+                            </h4>
+                            <span>2023</span>
+                            <p class="timeline-text">
+                                Front-End Development
+                            </p>
+                        </li>
+                        <!-- end timeline item -->
+
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Responsive Web Design -
+                                <span class="h4 timeline-item-title">freeCodeCamp</span>
+                            </h4>
+                            <span>2022</span>
+                            <p class="timeline-text">
+                                Front-End Development
+                            </p>
+                        </li>
+                        <!-- end timeline item -->
+
+                        <!-- start timeline item -->
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Digital Talent Scholarship -
+                                <span class="h4 timeline-item-title">Kominfo</span>
+                            </h4>
+                            <span>2019</span>
+                            <p class="timeline-text">
+                                Intermediate Animator
+                            </p>
+                        </li>
+                        <!-- end timeline item -->
+                    </ol>
+                </section>
+
+                <!-- Skills -->
+                <section class="skills">
+                    <h3 class="h3 skills-title">My Skills</h3>
+                    <ul class="skills-list has-scrollbar">
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/figma.svg" alt="figma">
+                            <h4 class="h4 skills-text">figma</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/xd.svg" alt="figma">
+                            <h4 class="h4 skills-text">adobe xd</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/photoshop.svg" alt="photoshop">
+                            <h4 class="h4 skills-text">photoshop</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/illustrator.svg" alt="illustrator">
+                            <h4 class="h4 skills-text">illustrator</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/aftereffects.svg" alt="after effects">
+                            <h4 class="h4 skills-text">after effects</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/lightroom.svg" alt="lightroom">
+                            <h4 class="h4 skills-text">lightroom</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/premiere.svg" alt="premiere">
+                            <h4 class="h4 skills-text">premiere pro</h4>
+                        </li>
+                        <!-- skills item end -->
+                        
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/corel-draw.svg" alt="corel draw">
+                            <h4 class="h4 skills-text">corel draw</h4>
+                        </li>
+                        <!-- skills item end -->
+
+                        <!-- skills item start -->
+                        <li class="skills-item">
+                            <img src="img/blender.svg" alt="blender">
+                            <h4 class="h4 skills-text">blender</h4>
+                        </li>
+                        <!-- skills item end -->
+                    </ul>
+                </section>
+            </article>
+            <!-- END RESUME SECTION -->
+
+            <!-- START PORTFOLIO SECTION -->
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <!-- filter -->
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Web Design</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Graphic Design</button>
+                        </li>
+
+                        <li class="filter-item">
+                            <button data-filter-btn>Photography</button>
+                        </li>
+                    </ul>
+                    <!-- end -->
+
+                    <!-- dropdown -->
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-selects-value>Select category</div>
+                            <div class="select-icon">
+                                <ion-icon name="caret-down-outline"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web Design</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Graphic Design</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Photography</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end -->
+
+                    <ul class="project-list">
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/packaging-cylinder-tahupee-display.jpg" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Packaging Cylinder Tahupee</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://budiiprayoga.github.io/survey-form/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/sitex.png" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">SiteX Landing Page</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="photography">
+                            <a href="https://budiiprayoga.github.io/photography-page/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/photography.jpg" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Gallery Photography</h3>
+                                <p class="project-category">Photography</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://budiiprayoga.github.io/webinar-landing-page/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/webinar-landing-page.png" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Webinar Landing Page</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/packaging-snack-tahupee-display.jpg" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Packaging Snack Tahupee</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/logo-tahupee-display.png" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Logo Tahupee</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://budiiprayoga.github.io/bio-bj-habibie/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/biography.png" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Biography Landing Page</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/mata_display.png" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Poster Mata</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://budiiprayoga.github.io/naturio-landing-page/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/naturio.png" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Naturio Landing Page</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="web design">
+                            <a href="https://budiiprayoga.github.io/tahupee-promotion-website/" target="_blank">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="navigate-outline"></ion-icon>
+                                    </div>
+                                    <img src="img/project/tahupee.png" alt="" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Tahupee Landing Page</h3>
+                                <p class="project-category">Web Design</p>
+                            </a>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/e-sport_display.jpg" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">E-Sport Winner</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+
+                        <!-- Project Item Start -->
+                        <li class="project-item active" data-filter-item data-category="graphic design">
+                            <figure class="project-img design">
+                                <img src="img/project/AR.jpg" alt="" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Logo AR Komputer</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </li>
+                        <!-- Project Item End -->
+                    </ul>
+                </section>
+            </article>
+            <!-- END PORTFOLIO SECTION -->
+
+            <!-- START CONTACT SECTION -->
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253658.7992747859!2d106.49649632448337!3d-6.594765411480467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b7ad0f824b%3A0x4c71fd1b0b8ae76d!2sKota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1694482578084!5m2!1sid!2sid"
+                        width="400" height="300" loading="lazy"></iframe>
+                        </iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">contact form</h3>
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Nama Lengkap" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
+                        </div>
+                        <textarea name="message" class="form-input" placeholder="Pesan" required data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span>Kirim</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+            <!-- END CONTACT SECTION -->
+        </div>
+
+        <!-- END MAIN CONTENT -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- JS CUSTOM -->
+    <script src="js/script.js"></script>
+    <!-- JS IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
