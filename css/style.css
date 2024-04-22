@@ -23,7 +23,9 @@
 /* ------------------------------------
 Reset Global
 ---------------------------------------*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,7 +39,12 @@ li {
   list-style: none;
 }
 
-img, ion-icon, a, button, time, span {
+img,
+ion-icon,
+a,
+button,
+time,
+span {
   display: block;
 }
 
@@ -49,7 +56,8 @@ button {
   cursor: pointer;
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
   width: 100%;
   background: none;
@@ -81,7 +89,8 @@ body {
 /* ------------------------------------
 Reused Style
 ---------------------------------------*/
-.sidebar, article {
+.sidebar,
+article {
   background: hsl(240, 2%, 12%);
   border: 1px solid hsl(0, 0%, 22%);
   border-radius: 20px;
@@ -139,7 +148,10 @@ article.active {
     opacity: 1;
   }
 }
-.h2, .h3, .h4, .h5 {
+.h2,
+.h3,
+.h4,
+.h5 {
   color: hsl(0, 0%, 98%);
   text-transform: capitalize;
 }
@@ -848,7 +860,8 @@ Portfolio
   transform: scale(1.1);
 }
 
-.project-title, .project-category {
+.project-title,
+.project-category {
   margin-left: 10px;
 }
 
@@ -982,6 +995,18 @@ textarea.form-input::-webkit-resizer {
   background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 }
 
+.content-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.content-footer p {
+  color: hsl(0, 0%, 100%);
+  display: ruby;
+}
+
 /* ------------------------------------
 Responsive
 ---------------------------------------*/
@@ -1027,7 +1052,8 @@ Responsive
     --fs-18: 24px;
     --fs-24: 32px;
   }
-  .sidebar, article {
+  .sidebar,
+  article {
     width: 520px;
     margin-inline: auto;
     padding: 30px;
@@ -1177,7 +1203,8 @@ Responsive
   }
 }
 @media screen and (min-width: 768px) {
-  .sidebar, article {
+  .sidebar,
+  article {
     width: 700px;
   }
   .has-scrollbar::-webkit-scrollbar-button {
@@ -1240,7 +1267,8 @@ Responsive
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
   }
-  .sidebar, article {
+  .sidebar,
+  article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
@@ -1309,7 +1337,8 @@ Responsive
   body::-webkit-scrollbar-button {
     height: 60px;
   }
-  .sidebar, article {
+  .sidebar,
+  article {
     width: auto;
   }
   article {
